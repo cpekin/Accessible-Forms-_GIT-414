@@ -222,7 +222,7 @@ fieldset{
 	width: 94%;
 	border: 1px solid #222;
 	border-radius: 0.2em;
-	display: grid;
+	display: flex;
 	grid-template-columns: 30px 1fr 30px 1fr;
 }
 

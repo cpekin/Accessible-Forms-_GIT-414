@@ -39,11 +39,11 @@
            <form method="POST" action="https://wp.zybooks.com/form-viewer.php">
                 
                 <div class="control">
-                    <label for="name">Full name<span class="required">*</span></label><input aria-describedby="required-description" id="name" type="text" required/>
+                    <label for="name">Full name<span class="required">*</span></label><input aria-describedby="required-description" id="name" name="name" type="text" required/>
                 </div>
                 
                 <div class="control">
-                    <label for="email">Email<span class="required">*</span></label><input aria-describedby="required-description" id="email" type="email" required/>
+                    <label for="email">Email<span class="required">*</span></label><input aria-describedby="required-description" id="email" name="email" type="email" required/>
                 </div>
                 
                 <div>
@@ -53,7 +53,7 @@
     
 
                 <label for="residence">State of Residence?<span class="required">*</span></label>
-                 <select id="residence" name="select" required>
+                 <select id="residence" name="state" required>
                      <option value="">Pick a state</option>
                     
                     <option value="AL">Alabama</option>
@@ -112,14 +112,14 @@
 
 
                 <fieldset>
-                    <legend>Preffered contact method:<span class="required">*</span></legend>
+                    <legend>Preferred contact method:<span class="required">*</span></legend>
 
-                        <input type="radio" id="phone" name="contact" value="Phone" required>
+                        <input type="radio" id="button-phone" name="contact" value="Phone" required>
                 
-                    <label for="phone">Phone</label><br>
+                    <label for="button-phone">Phone</label><br>
 
-                            <input type="radio" id="email" name="contact" value="email" required>
-                        <label for="email">Email</label><br>
+                            <input type="radio" id="button-email" name="contact" value="email" required>
+                        <label for="button-email">Email</label><br>
 
                 </fieldset>
                 
@@ -133,6 +133,8 @@
                     <input type="submit" value="Submit" />
                 </div>
             
+
+                <p id="required-description">Fields with * are required</p>
         </form>
 
 
