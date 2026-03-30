@@ -48,12 +48,12 @@
                 
                 <div>
                     <label for="phone">Phone<span class="required">*</span></label>
-                    <input type="tel" id="phone" name="Phone" pattern="[0-9]{10}" required>
+                    <input  aria-describedby="required-description"  type="tel" id="phone" name="Phone" pattern="[0-9]{10}" required>
                 </div>
     
 
                 <label for="residence">State of Residence?<span class="required">*</span></label>
-                 <select id="residence" name="State" required>
+                 <select  aria-describedby="required-description"  id="residence" name="State" required>
                      <option value="">Pick a state</option>
                     
                     <option value="AL">Alabama</option>
@@ -126,17 +126,18 @@
                 
                 
                 <div class="control">
-                    <label for="message">Message<span class="required">*</span></label><textarea id="message" name="User Message" required></textarea>
+                    <label for="message">Message<span class="required">*</span></label><textarea  aria-describedby="required-description"  id="message" name="User Message" required></textarea>
                 </div>
                 
-                <!-- <div class="control">
+                <div class="control">
+                     <label for="submit">Submit</label>
                     <input name="Submit" type="submit" value="Submit" />
                 </div>
-             -->
+            
 
-             <div class="control">
+             <!-- <div class="control">
                 <button type="submit">Submit</button>
-                </div>
+                </div> -->
 
                 <p id="required-description">* This field is required</p>
         </form>
